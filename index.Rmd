@@ -1,0 +1,585 @@
+---
+title: CAEME MADRID
+author: "Constanza Martorano"
+date: "`r Sys.Date()`"
+output:
+  
+  html_document:
+    css: FORMATO.css
+    highlight: textmate
+    theme: cosmo
+    toc: yes
+    toc_float: yes
+    font-import: http://fonts.googleapis.com/css?family=Barlow Condensed
+    font-family: 'Barlow Condensed'
+
+---
+
+<style>
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: Black;
+}
+</style>
+
+<style>
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    font-weight: bold;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: white;
+    background-color: black;
+}
+</style>
+
+
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = http://www.biblostravel.com/informacion-corporativa><img src ="LOGO.jpg" width="150" vspace="50" align="right"></A>') 
+    }); 
+</script> 
+
+
+
+```{r echo=FALSE, message=FALSE,warning=FALSE}
+library(readxl)
+library(dplyr)
+library(knitr)
+```
+
+# ACOMODACIóN 14/03 - 20/03/2020
+
+## Sugerencia principal: Hotel Emperador
+
+<iframe src="Emperador/Emperador.html" frameborder="0" width="100%" height="1500" scrolling="no"></iframe>
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Habitación doble para uso individual, desayuno incluido: 126,50€ IVA inc
+* Habitación doble, desayuno incluido: 140€ IVA inc
+  </ul>
+</p>
+</div>
+
+</br>
+</br>
+
+
+## Hoteles alternativos {.tabset .tabset-fade .tabset-pills}
+
+### Iberostar Las Letras
+
+<iframe src="LasLetras/LasLetras.html" frameborder="0" width="100%" height="1400" scrolling="no"></iframe>
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Habitación doble para uso individual, desayuno incluido: 165€ IVA inc
+* Habitación doble, desayuno incluido: 185€ IVA inc
+  </ul>
+</p>
+</div>
+
+</br>
+
+### H10 Tribeca
+
+<iframe src="H10Tribeca/H10Tribeca.html" frameborder="0" width="100%" height="1400" scrolling="no"></iframe>
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Habitación doble para uso individual, desayuno incluido: 130€ IVA inc
+* Habitación doble, desayuno incluido: 140€ IVA inc
+  </ul>
+</p>
+</div>
+
+*Precios válidos para una estancia mínima de 3 noches*
+
+</br>
+</br>
+
+
+### Catalonia Plaza Mayor
+
+<iframe src="CataloniaPlaza Mayor/CatPlazaMayor.html" frameborder="0" width="100%" height="1400" scrolling="no"></iframe>
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Habitación doble para uso individual, desayuno incluido: 155€ IVA inc
+* Habitación doble, desayuno incluido: 190€ IVA inc
+  </ul>
+</p>
+</div>
+
+*Precios válidos para una estancia mínima de 3 noches*
+
+</br>
+
+</br>
+
+### Catalonia Gran Via
+
+<iframe src="CataloniaGranVia/CataloniaGranVia.html" frameborder="0" width="100%" height="1250" scrolling="no"></iframe>
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Habitación doble para uso individual, desayuno incluido: 150€ IVA inc
+* Habitación doble, desayuno incluido: 170€ IVA inc
+  </ul>
+</p>
+</div>
+</br>
+</br>
+
+## Mapa 
+
+  * En negro están representados los hoteles ofrecidos para estas fechas.
+
+* En azul la localización de la Visita 1 (Farmaindustria) y la visita 2(Universidad Carlos III dept Economia)
+
+* En naranja están marcada la localización de los restaurantes ofrecidos.
+  
+*Es un mapa interactivo que permite hacer zoom para poder ver con mas detalle la situación de los diferentes elementos*
+
+<iframe src="https://www.google.com/maps/d/embed?mid=1AptufZr1p6RO1xlZWomTFMxwakTjHgbe&hl=es"  width="100%" height="480"></iframe>
+
+</br>
+</br>
+
+# ACOMODACIóN 25/04 - 01/05/2020
+
+## Sugerencia principal: Hotel Emperador
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Habitación doble para uso individual, desayuno incluido: 143€ IVA inc
+* Habitación doble, desayuno incluido: 156,50€ IVA inc
+  </ul>
+</p>
+</div>
+
+</br>
+</br>
+
+
+## Hoteles Alternativos {.tabset .tabset-fade .tabset-pills}
+
+### Iberostar Las Letras
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Habitación doble para uso individual, desayuno incluido: 175€ IVA inc
+* Habitación doble, desayuno incluido: 195€ IVA inc
+  </ul>
+</p>
+</div>
+
+</br>
+</br>
+
+
+### H10 Tribeca
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Habitación doble para uso individual, desayuno incluido: 130€ IVA inc
+* Habitación doble, desayuno incluido: 140€ IVA inc
+  </ul>
+</p>
+</div>
+
+*Precios válidos para una estancia mínima de 3 noches*
+
+</br>
+</br>
+
+### Hotel Liabeny
+
+<iframe src="Liabeny/Liabeny.html" frameborder="0" width="100%" height="1300" scrolling="no"></iframe>
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Habitación doble para uso individual, media pensión inc: 210€ IVA inc
+* Habitación doble, media pensión inc: 245€ IVA inc
+  </ul>
+</p>
+</div>
+
+*El Hotel Liabeny por ser temporada alta ofrece media pensión "obligatoria" y pide una estancia mínima de 3 noches*
+
+</br>
+</br>
+
+
+
+## Mapa 
+
+  * En negro están representados los hoteles ofrecidos para estas fechas.
+  
+* En azul la localización de la Visita 1 (Farmaindustria) y la visita 2(Universidad Carlos III dept Economia)
+
+* En naranja están marcada la localización de los restaurantes ofrecidos.
+  
+*Es un mapa interactivo que permite hacer zoom para poder ver con mas detalle la situación de los diferentes elementos*
+
+<iframe src="https://www.google.com/maps/d/embed?mid=1ePADQaOb-j6AhKUwFELeejOjRziwKz7x&hl=es"  width="100%" height="480"></iframe>
+
+</br>
+
+# RESTAURANTES
+
+## Cerca de Farmaindustria {.tabset .tabset-fade .tabset-pills}
+
+### La Gusa gastrobar
+
+<iframe src="La Gusa Gastrobar/LaGusa.html"  frameborder="0" width="100%" height="1200" scrolling="no"></iframe>
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 44€ IVA inc
+  </ul>
+</p>
+</div>
+</br>
+</br>
+
+
+
+### Chiquito Riz
+
+<iframe src="Chiquito Riz/ChiquitoRiz.html"  frameborder="0" width="100%" height="1200" scrolling="no"></iframe>
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 50€ IVA inc
+  </ul>
+</p>
+</div>
+</br>
+
+</br>
+
+## Cerca Dpto de Economía de la U. Carlos III {.tabset .tabset-fade .tabset-pills}
+
+### Baco
+
+<iframe src="BacoGetafe/Baco.html"  frameborder="0" width="100%" height="1200" scrolling="no"></iframe>
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 62€ IVA inc
+  </ul>
+</p>
+</div>
+</br>
+
+</br>
+
+
+
+## Céntricos de comida Tradicional {.tabset .tabset-fade .tabset-pills}
+
+### Serafina
+
+<iframe src="SERAFINA/Serafina.html"  frameborder="0" width="100%" height="1200" scrolling="no"></iframe>
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 41,50€ IVA inc
+
+
+  </ul>
+</p>
+</div>
+
+
+<br>
+<br>
+
+
+### Casa Gallega
+
+
+
+<iframe src="CasaGallega/CasaGallegaCast.html"  frameborder="0" width="100%" height="1200" scrolling="no"></iframe>
+
+<div class="precio">
+
+<p> PRECIOS: 
+  <ul>
+  
+* Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 62,50€ IVA inc
+
+
+  </ul>
+</p>
+</div>
+
+
+<br>
+<br>
+
+
+### OPulpo
+
+
+
+<iframe src="Opulpo/opulpocast.html"  frameborder="0" width="100%" height="1200" scrolling="no"></iframe>
+
+<div class="precio">
+<p> PRECIOS: 
+  <ul>
+  
+* Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 44€ IVA inc
+
+  </ul>
+</p>
+</div>
+
+
+<br>
+<br>
+
+
+### Meson Txistu
+
+
+El mesón tiene salones privados de difererentes tamaños, desde 46 a 150 pax en un solo salón.
+
+<iframe src="Meson Txistu/MesonTxistuCast.html"  frameborder="0" width="100%" height="1200" scrolling="no"></iframe>
+
+<div class="precio">
+<p> PRECIOS: 
+  <ul>
+  * Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 2 pax, agua y café) desde: 75,50€ IVA inc
+   </ul>
+</p>
+</div>
+
+<br>
+<br>
+
+### La Barraca
+
+
+<iframe src="LaBarraca/LaBarracaCast.html"  frameborder="0" width="100%" height="1250" scrolling="no"></iframe>
+
+<div class="precio">
+<p> PRECIOS: 
+  <ul>
+  * Menu básico compuesto de entrante, plato principal (paella), postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 52,50€ IVA inc
+   </ul>
+</p>
+</div>
+
+<br>
+<br>
+
+
+
+## Céntricos atmósfera especial{.tabset .tabset-fade .tabset-pills}
+
+
+### Ana La Santa
+
+<iframe src="AnaLaSanta/AnaLaSantaCast.html"  frameborder="0" width="100%" height="1250" scrolling="no"></iframe>
+
+<div class="precio">
+<p> PRECIOS: 
+  <ul>
+  * Menu básico compuesto por entrantes a compartir, principal a elegir entre carne y pescado, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 67,50€ IVA inc
+   </ul>
+</p>
+</div>
+
+<br>
+<br>
+
+
+### Habanera
+
+
+<iframe src="Habanera/HabaneraCast.html"  frameborder="0" width="100%" height="1250" scrolling="no"></iframe>
+
+<div class="precio">
+<p> PRECIOS: 
+  <ul>
+  * Menu básico compuesto por entrantes a compartir, principal a elegir entre carne y pescado, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 69€ IVA inc
+   </ul>
+</p>
+</div>
+
+<br>
+<br>
+
+
+### Mucca de Prado
+
+<iframe src="LaMuccadePrado/LaMuccadePradoCast.html"  frameborder="0" width="100%" height="1300" scrolling="no"></iframe>
+
+<div class="precio">
+<p> PRECIOS: 
+  <ul>
+  * Menu básico compuesto platos servidos al centro para compartir, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 44€ IVA inc
+   </ul>
+</p>
+</div>
+
+<br>
+<br>
+
+
+### El Imparcial
+
+
+<iframe src="Imparcial/ImparcialCast.html"  frameborder="0" width="100%" height="1300" scrolling="no"></iframe>
+
+<div class="precio">
+<p> PRECIOS: 
+  <ul>
+  * Menu básico compuesto entrantes a compartir, principal a elegir entre carne y pescado, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 48€ IVA inc
+   </ul>
+</p>
+</div>
+
+<br>
+<br>
+
+### Café de Oriente
+
+
+<iframe src="CafedeOriente/CafedeOriente.html"  frameborder="0" width="100%" height="1250" scrolling="no"></iframe>
+
+<div class="precio">
+<p> PRECIOS: 
+  <ul>
+  * Menu básico compuesto entrantes a compartir, principal a elegir entre carne y pescado, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 65€ IVA inc
+   </ul>
+</p>
+</div>
+
+<br>
+<br>
+
+
+### Sin Sombrero
+
+
+<iframe src="SinSombrero/SinSombrero.html"  frameborder="0" width="100%" height="1250" scrolling="no"></iframe>
+
+<div class="precio">
+<p> PRECIOS: 
+  <ul>
+  * Menu básico compuesto entrantes a compartir, principal a elegir entre carne y pescado, incluyendo bebida (ilimitada hasta el postre y café) desde: 56,50€ IVA inc
+   </ul>
+</p>
+</div>
+
+<br>
+<br>
+
+
+# TRASLADOS
+
+Recomendamos trabajar con Autocares Milo. Con más de 40 años de experiencia en el sector, Milo ofrece atención personalizada, flexibilidad y una flota de buses con una media de 2 años de antigüedad.
+
+Su calidad está avalada por la UNE-EN ISO 9001 y UNE-EN ISO 13816.
+
+Tienen una flota de más de 30 vehículos, desde 5 a 60 plazas con diferentes niveles de equipamiento y confort.
+
+<img src = "MILO.JPG">
+<img src = "MILO1.JPG">
+
+<br>
+
+<div class="precio">
+<p> PRECIOS: Mini bus 22/26 plazas - dentro del área urbana de Madrid
+  <ul>
+  
+* Traslado aeropuerto/ hotel: 172€ IVA inc
+
+* Disposición 4h diurnas: 254,50€ IVA inc
+
+* Disposición 8h diurnas: 433,50€ IVA inc
+
+* Disposición cena 4h: 316,50€ IVA inc
+
+* Hora extra: 74,50€ IVA inc
+
+   </ul>
+</p>
+</div>
+
+<style>
+
+.precio{
+background-color:#828282;
+color: white;
+padding: 10px;
+border: 1px solid black;
+margin-left: 5px;
+border-radius: 5px;
+}
+</style>
+
+<br>
+
+<br>
+<br>
+
+
+
+
+# CONDICIONES
+
+
+* Todos los precios incluyen las tasas.
+  
+* No se ha realizado ninguna reserva. Una vez confirmado se comprobará la disponibilidad.
+
+<br>
+<br>
+

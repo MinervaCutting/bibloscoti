@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Constanza Martorano" />
+
+<meta name="date" content="2019-12-09" />
+
+<title>CAEME MADRID</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="FORMATO.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">BIBLOS</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Propuesta</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">CAEME MADRID</h1>
+<h4 class="author">Constanza Martorano</h4>
+<h4 class="date">2019-12-09</h4>
+
+</div>
+
+
+<style>
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: Black;
+}
+</style>
+<style>
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    font-weight: bold;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: white;
+    background-color: black;
+}
+</style>
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = http://www.biblostravel.com/informacion-corporativa><img src ="LOGO.jpg" width="150" vspace="50" align="right"></A>') 
+    }); 
+</script>
+<div id="acomodación-1403---20032020" class="section level1">
+<h1>ACOMODACIóN 14/03 - 20/03/2020</h1>
+<div id="sugerencia-principal-hotel-emperador" class="section level2">
+<h2>Sugerencia principal: Hotel Emperador</h2>
+<iframe src="Emperador/Emperador.html" frameborder="0" width="100%" height="1500" scrolling="no">
+</iframe>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Habitación doble para uso individual, desayuno incluido: 126,50€ IVA inc</li>
+<li>Habitación doble, desayuno incluido: 140€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="hoteles-alternativos" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Hoteles alternativos</h2>
+<div id="iberostar-las-letras" class="section level3">
+<h3>Iberostar Las Letras</h3>
+<iframe src="LasLetras/LasLetras.html" frameborder="0" width="100%" height="1400" scrolling="no">
+</iframe>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Habitación doble para uso individual, desayuno incluido: 165€ IVA inc</li>
+<li>Habitación doble, desayuno incluido: 185€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br></p>
+</div>
+<div id="h10-tribeca" class="section level3">
+<h3>H10 Tribeca</h3>
+<iframe src="H10Tribeca/H10Tribeca.html" frameborder="0" width="100%" height="1400" scrolling="no">
+</iframe>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Habitación doble para uso individual, desayuno incluido: 130€ IVA inc</li>
+<li>Habitación doble, desayuno incluido: 140€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><em>Precios válidos para una estancia mínima de 3 noches</em></p>
+<p></br> </br></p>
+</div>
+<div id="catalonia-plaza-mayor" class="section level3">
+<h3>Catalonia Plaza Mayor</h3>
+<iframe src="CataloniaPlaza Mayor/CatPlazaMayor.html" frameborder="0" width="100%" height="1400" scrolling="no">
+</iframe>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Habitación doble para uso individual, desayuno incluido: 155€ IVA inc</li>
+<li>Habitación doble, desayuno incluido: 190€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><em>Precios válidos para una estancia mínima de 3 noches</em></p>
+<p></br></p>
+<p></br></p>
+</div>
+<div id="catalonia-gran-via" class="section level3">
+<h3>Catalonia Gran Via</h3>
+<iframe src="CataloniaGranVia/CataloniaGranVia.html" frameborder="0" width="100%" height="1250" scrolling="no">
+</iframe>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Habitación doble para uso individual, desayuno incluido: 150€ IVA inc</li>
+<li>Habitación doble, desayuno incluido: 170€ IVA inc
+</ul>
+</p>
+</div>
+</br> </br></li>
+</ul>
+</div>
+</div>
+<div id="mapa" class="section level2">
+<h2>Mapa</h2>
+<ul>
+<li><p>En negro están representados los hoteles ofrecidos para estas fechas.</p></li>
+<li><p>En azul la localización de la Visita 1 (Farmaindustria) y la visita 2(Universidad Carlos III dept Economia)</p></li>
+<li><p>En naranja están marcada la localización de los restaurantes ofrecidos.</p></li>
+</ul>
+<p><em>Es un mapa interactivo que permite hacer zoom para poder ver con mas detalle la situación de los diferentes elementos</em></p>
+<iframe src="https://www.google.com/maps/d/embed?mid=1AptufZr1p6RO1xlZWomTFMxwakTjHgbe&amp;hl=es" width="100%" height="480">
+</iframe>
+<p></br> </br></p>
+</div>
+</div>
+<div id="acomodación-2504---01052020" class="section level1">
+<h1>ACOMODACIóN 25/04 - 01/05/2020</h1>
+<div id="sugerencia-principal-hotel-emperador-1" class="section level2">
+<h2>Sugerencia principal: Hotel Emperador</h2>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Habitación doble para uso individual, desayuno incluido: 143€ IVA inc</li>
+<li>Habitación doble, desayuno incluido: 156,50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="hoteles-alternativos-1" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Hoteles Alternativos</h2>
+<div id="iberostar-las-letras-1" class="section level3">
+<h3>Iberostar Las Letras</h3>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Habitación doble para uso individual, desayuno incluido: 175€ IVA inc</li>
+<li>Habitación doble, desayuno incluido: 195€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="h10-tribeca-1" class="section level3">
+<h3>H10 Tribeca</h3>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Habitación doble para uso individual, desayuno incluido: 130€ IVA inc</li>
+<li>Habitación doble, desayuno incluido: 140€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><em>Precios válidos para una estancia mínima de 3 noches</em></p>
+<p></br> </br></p>
+</div>
+<div id="hotel-liabeny" class="section level3">
+<h3>Hotel Liabeny</h3>
+<iframe src="Liabeny/Liabeny.html" frameborder="0" width="100%" height="1300" scrolling="no">
+</iframe>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Habitación doble para uso individual, media pensión inc: 210€ IVA inc</li>
+<li>Habitación doble, media pensión inc: 245€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><em>El Hotel Liabeny por ser temporada alta ofrece media pensión “obligatoria” y pide una estancia mínima de 3 noches</em></p>
+<p></br> </br></p>
+</div>
+</div>
+<div id="mapa-1" class="section level2">
+<h2>Mapa</h2>
+<ul>
+<li><p>En negro están representados los hoteles ofrecidos para estas fechas.</p></li>
+<li><p>En azul la localización de la Visita 1 (Farmaindustria) y la visita 2(Universidad Carlos III dept Economia)</p></li>
+<li><p>En naranja están marcada la localización de los restaurantes ofrecidos.</p></li>
+</ul>
+<p><em>Es un mapa interactivo que permite hacer zoom para poder ver con mas detalle la situación de los diferentes elementos</em></p>
+<iframe src="https://www.google.com/maps/d/embed?mid=1ePADQaOb-j6AhKUwFELeejOjRziwKz7x&amp;hl=es" width="100%" height="480">
+</iframe>
+<p></br></p>
+</div>
+</div>
+<div id="restaurantes" class="section level1">
+<h1>RESTAURANTES</h1>
+<div id="cerca-de-farmaindustria" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Cerca de Farmaindustria</h2>
+<div id="la-gusa-gastrobar" class="section level3">
+<h3>La Gusa gastrobar</h3>
+<iframe src="La Gusa Gastrobar/LaGusa.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 44€ IVA inc
+</ul>
+</p>
+</div>
+</br> </br></li>
+</ul>
+</div>
+<div id="chiquito-riz" class="section level3">
+<h3>Chiquito Riz</h3>
+<iframe src="Chiquito Riz/ChiquitoRiz.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 50€ IVA inc
+</ul>
+</p>
+</div>
+</br></li>
+</ul>
+<p></br></p>
+</div>
+</div>
+<div id="cerca-dpto-de-economía-de-la-u.-carlos-iii" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Cerca Dpto de Economía de la U. Carlos III</h2>
+<div id="baco" class="section level3">
+<h3>Baco</h3>
+<iframe src="BacoGetafe/Baco.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 62€ IVA inc
+</ul>
+</p>
+</div>
+</br></li>
+</ul>
+<p></br></p>
+</div>
+</div>
+<div id="céntricos-de-comida-tradicional" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Céntricos de comida Tradicional</h2>
+<div id="serafina" class="section level3">
+<h3>Serafina</h3>
+<iframe src="SERAFINA/Serafina.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 41,50€ IVA inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="casa-gallega" class="section level3">
+<h3>Casa Gallega</h3>
+<iframe src="CasaGallega/CasaGallegaCast.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 62,50€ IVA inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="opulpo" class="section level3">
+<h3>OPulpo</h3>
+<iframe src="Opulpo/opulpocast.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 44€ IVA inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="meson-txistu" class="section level3">
+<h3>Meson Txistu</h3>
+<p>El mesón tiene salones privados de difererentes tamaños, desde 46 a 150 pax en un solo salón.</p>
+<iframe src="Meson Txistu/MesonTxistuCast.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 2 pax, agua y café) desde: 75,50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="la-barraca" class="section level3">
+<h3>La Barraca</h3>
+<iframe src="LaBarraca/LaBarracaCast.html" frameborder="0" width="100%" height="1250" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto de entrante, plato principal (paella), postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 52,50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+</div>
+<div id="céntricos-atmósfera-especial" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Céntricos atmósfera especial</h2>
+<div id="ana-la-santa" class="section level3">
+<h3>Ana La Santa</h3>
+<iframe src="AnaLaSanta/AnaLaSantaCast.html" frameborder="0" width="100%" height="1250" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por entrantes a compartir, principal a elegir entre carne y pescado, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 67,50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="habanera" class="section level3">
+<h3>Habanera</h3>
+<iframe src="Habanera/HabaneraCast.html" frameborder="0" width="100%" height="1250" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por entrantes a compartir, principal a elegir entre carne y pescado, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 69€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="mucca-de-prado" class="section level3">
+<h3>Mucca de Prado</h3>
+<iframe src="LaMuccadePrado/LaMuccadePradoCast.html" frameborder="0" width="100%" height="1300" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto platos servidos al centro para compartir, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 44€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="el-imparcial" class="section level3">
+<h3>El Imparcial</h3>
+<iframe src="Imparcial/ImparcialCast.html" frameborder="0" width="100%" height="1300" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto entrantes a compartir, principal a elegir entre carne y pescado, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 48€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="café-de-oriente" class="section level3">
+<h3>Café de Oriente</h3>
+<iframe src="CafedeOriente/CafedeOriente.html" frameborder="0" width="100%" height="1250" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto entrantes a compartir, principal a elegir entre carne y pescado, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 65€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="sin-sombrero" class="section level3">
+<h3>Sin Sombrero</h3>
+<iframe src="SinSombrero/SinSombrero.html" frameborder="0" width="100%" height="1250" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto entrantes a compartir, principal a elegir entre carne y pescado, incluyendo bebida (ilimitada hasta el postre y café) desde: 56,50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+</div>
+</div>
+<div id="traslados" class="section level1">
+<h1>TRASLADOS</h1>
+<p>Recomendamos trabajar con Autocares Milo. Con más de 40 años de experiencia en el sector, Milo ofrece atención personalizada, flexibilidad y una flota de buses con una media de 2 años de antigüedad.</p>
+<p>Su calidad está avalada por la UNE-EN ISO 9001 y UNE-EN ISO 13816.</p>
+<p>Tienen una flota de más de 30 vehículos, desde 5 a 60 plazas con diferentes niveles de equipamiento y confort.</p>
+<p><img src = "MILO.jpg"> <img src = "MILO1.jpg"></p>
+<p><br></p>
+<div class="precio">
+<p>
+PRECIOS: Mini bus 22/26 plazas - dentro del área urbana de Madrid
+<ul>
+<ul>
+<li><p>Traslado aeropuerto/ hotel: 172€ IVA inc</p></li>
+<li><p>Disposición 4h diurnas: 254,50€ IVA inc</p></li>
+<li><p>Disposición 8h diurnas: 433,50€ IVA inc</p></li>
+<li><p>Disposición cena 4h: 316,50€ IVA inc</p></li>
+<li><p>Hora extra: 74,50€ IVA inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<style>
+
+.precio{
+background-color:#828282;
+color: white;
+padding: 10px;
+border: 1px solid black;
+margin-left: 5px;
+border-radius: 5px;
+}
+</style>
+<p><br></p>
+<p><br> <br></p>
+</div>
+<div id="condiciones" class="section level1">
+<h1>CONDICIONES</h1>
+<ul>
+<li><p>Todos los precios incluyen las tasas.</p></li>
+<li><p>No se ha realizado ninguna reserva. Una vez confirmado se comprobará la disponibilidad.</p></li>
+</ul>
+<p><br> <br></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

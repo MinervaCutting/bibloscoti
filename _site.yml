@@ -1,0 +1,9 @@
+name: "my-website"
+navbar:
+  title: "BIBLOS"
+  left:
+    - text: "Propuesta"
+      href: index.html
+
+   
+   
